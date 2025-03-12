@@ -226,7 +226,7 @@
     return [SDImageCoderHelper CGImageIsHDR:self.CGImage];
 #else
     if (@available(iOS 17, tvOS 17, watchOS 10, *)) {
-        return self.isHighDynamicRange;
+        return self.sd_isHighDynamicRange;
     } else {
         return [SDImageCoderHelper CGImageIsHDR:self.CGImage];
     }
